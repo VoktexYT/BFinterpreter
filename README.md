@@ -4,29 +4,28 @@ This is an advanced Brainfuck interpreter with additional functionalities to enh
 
 ---
 
-🧠 bfc++ - Advanced Brainfuck Interpreter
+## 🧠 bfc++ - Advanced Brainfuck Interpreter
 bfc++ is an enhanced Brainfuck interpreter that extends the original language with new features such as conditionals, variables, ASCII manipulation, and improved input handling. It provides a more flexible and structured approach while staying true to Brainfuck's minimalist nature.
 
-🚀 Installation
+## 🚀 Installation
 Simply compile the source code using a C++ compiler:
 
-sh
-Copy
-Edit
+```
 g++ -o bfc++ main.cpp
+```
 Or use the precompiled binary if available.
 
-📌 Usage
+## 📌 Usage
 Run a Brainfuck script with:
 
-sh
-Copy
-Edit
+```
 bfc++ <script.bf>
+```
 Optional Flags:
---debug → Show each execution step
---sizem <size> → Set the memory size (default: 10)
-🔤 Extended Brainfuck Syntax
+| --debug → Show each execution step
+| --sizem <size> → Set the memory size (default: 10)
+
+## 🔤 Extended Brainfuck Syntax
 Symbol	Description
 +	Increase the value at the current memory cell
 -	Decrease the value at the current memory cell
@@ -46,13 +45,14 @@ _	Set current cell to min value (0)
 /	Convert a character to ASCII and store it (/a → 97)
 @	Store current cell value in a variable
 $	Set current cell value to a stored variable
-📝 Example
+
+## 📝 Example
 This code stores the ASCII value of 'a', moves the cursor, and restores the value:
 
-sql
-Copy
-Edit
+```
 /a@a      # Store ASCII of 'a' (97) in variable 'a'
 >>$a.     # Move two cells right, set value from 'a', print character
-📜 License
+```
+
+## 📜 License
 This project is open-source and available under the MIT License.
