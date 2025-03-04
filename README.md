@@ -22,9 +22,9 @@ Run a Brainfuck script with:
 bfc++ <script.bf>
 ```
 Optional Flags:
-| --debug → Show each execution step
-| --sizem <size> → Set the memory size (default: 10)
-  --help Get the mini doc in terminal
+* --debug → Show each execution step
+* --sizem <size> → Set the memory size (default: 10)
+* --help Get the mini doc in terminal
 
 ## 🔤 Extended Brainfuck Syntax
 Symbol	Description
