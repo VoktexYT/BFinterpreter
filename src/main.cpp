@@ -16,34 +16,41 @@
 void displayHelp()
 {
 	std::cout 
-		<< "This package is used to compile brainfuck code.\n\t" 
-		<< "bfc++ <script.bf>\n\t\t"
-		<< PARAM_DEBUG
-		<< " Show all step compilation\n\t\t"
-		<< PARAM_SIZEM 
-		<< " <size> The size of the memory (default 10)\n\n\t"
-		<< "All symbols:\n\t\t"
-		<< BF_PLUS << " Increase memory case\n\t\t"
-		<< BF_LESS << " Decrease memory case\n\t\t"
-		<< BF_RIGHT << " Move memory cursor to the right\n\t\t"
-		<< BF_LEFT << " Move memory cursor to the left\n\t\t"
-		<< BF_LOOP_IN << " The start of the loop (While actual case != 0)\n\t\t"
-		<< BF_LOOP_OUT << " The end of the loop\n\t\t"
-		<< BF_IF_IN << " The start of the if (if actual case == 0)\n\t\t"
-		<< BF_IF_OUT << " The end of the if\n\t\t"
-		<< BF_PRINT << " Print ASCII symbol\n\t\t"
-		<< BF_PRINT_C << " Print ASCII code\n\t\t"
-		<< BF_INPUT << " Get char (Convert char to ASCII code)\n\t\t"
-		<< BF_INPUT_I << " Get num (Max : 255, Min : 0)\n\t\t"
-		<< BF_COMMENT << " Comment, ignore line\n\t\t"
-		<< BF_FULL << " Set max value in actual case (255)\n\t\t"
-		<< BF_EMPTY << " Set min value in actual case (0)\n\t\t"
-		<< BF_CHAR_TO_ASCII << " Convert char to ascii and put value in actual case (/a = 97)\n\t\t"
-		<< BF_VAR << " Store value of actual case in var\n\t\t"
-		<< BF_VAR_GET << " Set actual case value with variable value\n\t\t"
-		<< "\n"
-		;
+		<< "=====================================\n"
+		<< "  🧠 bfc++ - Advanced Brainfuck Interpreter  \n"
+		<< "=====================================\n\n"
+
+		<< "Usage:\n"
+		<< "\tbfc++ <script.bf> [options]\n\n"
+
+		<< "Options:\n"
+		<< "\t" << PARAM_DEBUG << "\t Show all steps during compilation\n"
+		<< "\t" << PARAM_SIZEM << " <size>\t Set the memory size (default: 10)\n\n"
+		<< "\t" << PARAM_HELP << "\t Show the docs\n\n"
+
+		<< "Brainfuck Instructions:\n"
+		<< "\t" << BF_PLUS          << "\t Increase value at current memory cell\n"
+		<< "\t" << BF_LESS          << "\t Decrease value at current memory cell\n"
+		<< "\t" << BF_RIGHT         << "\t Move memory pointer to the right\n"
+		<< "\t" << BF_LEFT          << "\t Move memory pointer to the left\n"
+		<< "\t" << BF_LOOP_IN       << "\t Start a loop (while current cell != 0)\n"
+		<< "\t" << BF_LOOP_OUT      << "\t End of the loop\n"
+		<< "\t" << BF_IF_IN         << "\t Start an IF block (if current cell == 0)\n"
+		<< "\t" << BF_IF_OUT        << "\t End of the IF block\n"
+		<< "\t" << BF_PRINT         << "\t Print ASCII character of current cell\n"
+		<< "\t" << BF_PRINT_C       << "\t Print numeric ASCII value of current cell\n"
+		<< "\t" << BF_INPUT         << "\t Get a character from user input (stores ASCII)\n"
+		<< "\t" << BF_INPUT_I       << "\t Get a number from user input (0-255)\n"
+		<< "\t" << BF_COMMENT       << "\t Comment (ignore the entire line)\n"
+		<< "\t" << BF_FULL          << "\t Set current cell to max value (255)\n"
+		<< "\t" << BF_EMPTY         << "\t Set current cell to min value (0)\n"
+		<< "\t" << BF_CHAR_TO_ASCII << "\t Convert char to ASCII and store (/a → 97)\n"
+		<< "\t" << BF_VAR           << "\t Store current cell value in a variable\n"
+		<< "\t" << BF_VAR_GET       << "\t Set current cell value to stored variable value\n"
+
+		<< "\n=====================================\n";
 }
+
 
 
 //

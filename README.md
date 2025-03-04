@@ -11,7 +11,7 @@ bfc++ is an enhanced Brainfuck interpreter that extends the original language wi
 Simply compile the source code using a C++ compiler:
 
 ```
-g++ -o bfc++ main.cpp
+g++ -o bfc++ src/*.cpp
 ```
 Or use the precompiled binary if available.
 
@@ -24,6 +24,7 @@ bfc++ <script.bf>
 Optional Flags:
 | --debug → Show each execution step
 | --sizem <size> → Set the memory size (default: 10)
+  --help Get the mini doc in terminal
 
 ## 🔤 Extended Brainfuck Syntax
 Symbol	Description
@@ -47,12 +48,39 @@ _	Set current cell to min value (0)
 $	Set current cell value to a stored variable
 
 ## 📝 Example
-This code stores the ASCII value of 'a', moves the cursor, and restores the value:
+### All examples are in example/ directory
 
+## Debug mode
 ```
-/a@a      # Store ASCII of 'a' (97) in variable 'a'
->>$a.     # Move two cells right, set value from 'a', print character
+	+--------------------+
+	| Brainfuck Compiler |
+	+--------------------+
+	H	48 00 00 00 00 00 00 00 00 00 
+H	.	48 00 00 00 00 00 00 00 00 00 
+	e	65 00 00 00 00 00 00 00 00 00 
+e	.	65 00 00 00 00 00 00 00 00 00 
+	l	6c 00 00 00 00 00 00 00 00 00 
+l	.	6c 00 00 00 00 00 00 00 00 00 
+	l	6c 00 00 00 00 00 00 00 00 00 
+l	.	6c 00 00 00 00 00 00 00 00 00 
+	o	6f 00 00 00 00 00 00 00 00 00 
+o	.	6f 00 00 00 00 00 00 00 00 00 
+	_	20 00 00 00 00 00 00 00 00 00 
+ 	.	20 00 00 00 00 00 00 00 00 00 
+	W	57 00 00 00 00 00 00 00 00 00 
+W	.	57 00 00 00 00 00 00 00 00 00 
+	o	6f 00 00 00 00 00 00 00 00 00 
+o	.	6f 00 00 00 00 00 00 00 00 00 
+	r	72 00 00 00 00 00 00 00 00 00 
+r	.	72 00 00 00 00 00 00 00 00 00 
+	d	64 00 00 00 00 00 00 00 00 00 
+d	.	64 00 00 00 00 00 00 00 00 00 
+	!	21 00 00 00 00 00 00 00 00 00 
+!	.	21 00 00 00 00 00 00 00 00 00 
+
+	21 00 00 00 00 00 00 00 00 00 
 ```
+
 
 ## 📜 License
 This project is open-source and available under the MIT License.
