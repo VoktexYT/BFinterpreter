@@ -75,11 +75,8 @@ void checkSettings(int argc, char* argv[], int& sizeOfMemory, bool& debug)
 void titre() 
 {
 	std::cout
-		<< "\t+--------------------+\n"
-		<< "\t| Brainfuck Compiler |\n"
-		<< "\t+--------------------+\n";
+		<< "  🧠 bfc++ - Advanced Brainfuck Interpreter  \n";
 }
-
 
 //
 int main(int argc, char* argv[])
