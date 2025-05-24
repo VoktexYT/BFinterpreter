@@ -28,24 +28,24 @@ Optional Flags:
 
 ## 🔤 Extended Brainfuck Syntax
 Symbol	Description
-+	Increase the value at the current memory cell
--	Decrease the value at the current memory cell
->	Move memory pointer to the right
-<	Move memory pointer to the left
-[	Start a loop (while current cell != 0)
-]	End of the loop
-(	Start an if block (if current cell == 0)
-)	End of the if block
-.	Print ASCII character of current cell
-:	Print numeric ASCII value of current cell
-,	Get a character from user input (stores its ASCII code)
-;	Get a number from user input (0-255)
-#	Comment (ignores everything on the line)
-=	Set current cell to max value (255)
-_	Set current cell to min value (0)
-/	Convert a character to ASCII and store it (/a → 97)
-@	Store current cell value in a variable
-$	Set current cell value to a stored variable
+"+"	Increase the value at the current memory cell
+"-"	Decrease the value at the current memory cell
+">"	Move memory pointer to the right
+"<"	Move memory pointer to the left
+"["	Start a loop (while current cell != 0)
+"]"	End of the loop
+"("	Start an if block (if current cell == 0)
+")"	End of the if block
+"."	Print ASCII character of current cell
+":"	Print numeric ASCII value of current cell
+","	Get a character from user input (stores its ASCII code)
+";"	Get a number from user input (0-255)
+"#"	Comment (ignores everything on the line)
+"="	Set current cell to max value (255)
+"_"	Set current cell to min value (0)
+"/"	Convert a character to ASCII and store it (/a → 97)
+"@"	Store current cell value in a variable
+"$"	Set current cell value to a stored variable
 
 ## 📝 Example
 ### All examples are in example/ directory
