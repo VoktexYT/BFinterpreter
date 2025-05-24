@@ -27,25 +27,25 @@ Optional Flags:
 * --help Get the mini doc in terminal
 
 ## 🔤 Extended Brainfuck Syntax
-Symbol	Description
-"+"	Increase the value at the current memory cell
-"-"	Decrease the value at the current memory cell
-">"	Move memory pointer to the right
-"<"	Move memory pointer to the left
-"["	Start a loop (while current cell != 0)
-"]"	End of the loop
-"("	Start an if block (if current cell == 0)
-")"	End of the if block
-"."	Print ASCII character of current cell
-":"	Print numeric ASCII value of current cell
-","	Get a character from user input (stores its ASCII code)
-";"	Get a number from user input (0-255)
-"#"	Comment (ignores everything on the line)
-"="	Set current cell to max value (255)
-"_"	Set current cell to min value (0)
-"/"	Convert a character to ASCII and store it (/a → 97)
-"@"	Store current cell value in a variable
-"$"	Set current cell value to a stored variable
+Symbol	Description<br>
+"+"	Increase the value at the current memory cell<br>
+"-"	Decrease the value at the current memory cell<br>
+">"	Move memory pointer to the right<br>
+"<"	Move memory pointer to the left<br>
+"["	Start a loop (while current cell != 0)<br>
+"]"	End of the loop<br>
+"("	Start an if block (if current cell == 0)<br>
+")"	End of the if block<br>
+"."	Print ASCII character of current cell<br>
+":"	Print numeric ASCII value of current cell<br>
+","	Get a character from user input (stores its ASCII code)<br>
+";"	Get a number from user input (0-255)<br>
+"#"	Comment (ignores everything on the line)<br>
+"="	Set current cell to max value (255)<br>
+"_"	Set current cell to min value (0)<br>
+"/"	Convert a character to ASCII and store it (/a → 97)<br>
+"@"	Store current cell value in a variable<br>
+"$"	Set current cell value to a stored variable<br><br>
 
 ## 📝 Example
 ### All examples are in example/ directory
